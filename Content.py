@@ -6,9 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    for i in range(0,100):
-        print "Workout"
-    return "Andrew's Personal Training Website"
+    return render_template('temp.html')
 
 
 if __name__ == "__main__":
